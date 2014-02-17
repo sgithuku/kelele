@@ -1,4 +1,6 @@
 #!flask/bin/python
 import os
 from app import app
-app.run(debug = True)
+
+if __name__ == "__main__":
+ app.run(port=5011,debug = True)
