@@ -27,6 +27,8 @@ jQuery(document).ready(function($) {
         //If Successful add the data to the 'location' div
        var elem = document.getElementById("location");
        elem.value = data.results[0].formatted_address;
+       elem.style.background = "#fafafa no-repeat scroll";
+       elem.style["padding-left"] = "0.5rem";
       },
       error: function(xhr, textStatus, errorThrown) {
              errorPosition();

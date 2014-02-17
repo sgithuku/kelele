@@ -51,6 +51,15 @@ h1{
 
 }
 
+/* input loading animation */
+input#location{
+  background: url(../media/gif-load.gif) #fafafa no-repeat scroll;
+  background-size: contain;
+  padding-left:30px;
+}
+
+
+
 /* button */
 
 
