@@ -1,0 +1,19 @@
+<!-- extend from base layout -->
+{% extends "index.html" %}
+
+{% block content %}
+<script src="{{ url_for('static', filename='bower_components/jquery/jquery.js')}}"></script>
+<script src="{{ url_for('static', filename='js/app.js')}}"></script>
+<div class="row" id="form">
+  <form action="/form" method="POST" name="form">
+    <div class="small-6 columns small-centered">
+            <h2>Who should we notify?</h2>
+              {{form.hidden_tag()}}
+              {{form.name(size=15,placeholder="Name")}}
+              {{form.phone(size=15,placeholder="Phone number")}}
+              {{form.location(id="location",placeholder="Where are you?")}}
+              <input type="submit" class="btn btn-6 btn-6a" value="Send">
+    </div>
+  </form>
+</div>
+{% endblock %}

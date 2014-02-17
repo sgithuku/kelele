@@ -1,0 +1,26 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelele</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/app.css')}}" />
+    <script src="{{ url_for('static', filename='bower_components/modernizr/modernizr.js')}}"></script>
+
+  </head>
+  <body>
+    <div class="bgwrapper">
+      <div class="row small-6 small-centered">
+          <a href="{{ url_for('index') }}"><h1>Kelele</h1></a>
+      </div>
+
+      <div class="row relative small-6 columns small-centered">
+        <div class="diamond"></div>
+        <hr class="divider" />
+      </div>
+
+      {% block content %}{% endblock %}
+    
+    {% extends "footer.html" %}
+  </body>
+</html>
