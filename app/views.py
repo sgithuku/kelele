@@ -2,9 +2,6 @@ from flask import render_template, redirect, flash
 from app import app
 from forms import Locate
 from twilio.rest import TwilioRestClient
-from pyquery import PyQuery as pq
-from lxml import etree
-import urllib
 
 @app.route('/')
 def index():

@@ -10,16 +10,12 @@
   </head>
   <body>
     <div class="bgwrapper">
-      <div class="row small-6 small-centered">
+      <div class="small-centered header">
           <a href="{{ url_for('index') }}"><h1>Kelele</h1></a>
       </div>
-
-      <div class="row relative small-6 columns small-centered">
-        <div class="diamond"></div>
-        <hr class="divider" />
+      <div class="holder">
+        {% block content %}{% endblock %}
       </div>
-
-      {% block content %}{% endblock %}
     
     {% extends "footer.html" %}
   </body>
