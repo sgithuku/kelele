@@ -3,7 +3,6 @@ from app import app
 from forms import Locate
 from twilio.rest import TwilioRestClient
 
-
 @app.route('/')
 def index():
  return render_template("intro.html")
