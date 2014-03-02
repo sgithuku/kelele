@@ -3,8 +3,14 @@
 {% block content %}
   <div class="row small-6 columns small-centered">
     {% if user.given_name %}
+    <script src="{{ url_for('static', filename='js/app.js')}}"></script>
+
     <h2>{{user.given_name}}, notify your friends when you've been in an accident</h2>
-    <a href="{{ url_for('form') }}" class="btn btn-6 btn-6a find">Find me</a>
+    <form action="" method="POST">
+        {{form.hidden_tag()}}
+        {{form.location(id="location",placeholder="Where are you?")}}
+        <input type="submit" class="btn btn-6 btn-6a" value="Send messages">
+    </form>
     {% else %}
     <h2>Notify your friends when you've been in an accident</h2>
     <a href="{{ url_for('form') }}" class="btn btn-6 btn-6a find">Find me</a>

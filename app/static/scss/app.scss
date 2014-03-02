@@ -1,8 +1,10 @@
 @import "settings";
 @import "foundation";
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 
 body{
   background: url(../media/Accident.jpg) no-repeat transparent;
+  font-family: "Lato", inherit !important;
   min-height: 100%;
 }
 
@@ -20,6 +22,7 @@ h1, h2{
 
 h3{
   color: #fefefe;
+  font-weight: 100;
 }
 
 h1{
@@ -28,6 +31,7 @@ h1{
   display: inline-block;
   padding-left: 0.25rem;
 }
+
 
 .center{
   text-align: center;
@@ -144,7 +148,7 @@ img.block{
 
 .footer{
   text-align: center;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   min-width: 100%;
   width: 100%;

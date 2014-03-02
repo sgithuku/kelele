@@ -4,19 +4,34 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kelele</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename="/media/favicons/apple-touch-icon-57x57.png")}}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename="/media/favicons/apple-touch-icon-72x72.png")}}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename="/media/favicons/apple-touch-icon-60x60.png")}}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename="/media/favicons/apple-touch-icon-76x76.png")}}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename="media/favicons/favicon-16x16.png")}}" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename="media/favicons/favicon-32x32.png")}}" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#111111">
     <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/app.css')}}" />
     <script src="{{ url_for('static', filename='bower_components/modernizr/modernizr.js')}}"></script>
     <script src="{{ url_for('static', filename='bower_components/jquery/jquery.js')}}"></script>
-    
+    <script src="{{ url_for('static', filename='bower_components/fastclick/lib/fastclick.js')}}"></script>
+    <script src="{{ url_for('static', filename='bower_components/foundation/js/foundation.js')}}"></script>
+    <script src="{{ url_for('static', filename='bower_components/foundation/js/foundation/foundation.topbar.js')}}"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+
   </head>
   <body>
     <div class="bgwrapper">
-      <nav class="top-bar small-6 small-centered columns">
+      <nav class="top-bar small-6 small-centered columns" data-topbar>
         <ul class="title-area">
           <li class="name">
             <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='media/logo.png')}}" alt="" width="40px" height="40px"></a>
             <h1><a href="{{ url_for('index') }}">Kelele</a></h1>
           </li>
+          <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
         </ul>
 
         <section class="top-bar-section">

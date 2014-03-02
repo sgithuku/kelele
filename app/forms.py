@@ -6,3 +6,6 @@ class Locate(Form):
     phone = TextField('phone', validators = [DataRequired()])
     name = TextField('name', validators = [DataRequired()])
     location = TextField('location', validators = [DataRequired()])
+
+class Intro(Form):
+    location = TextField('location', validators = [DataRequired()])
