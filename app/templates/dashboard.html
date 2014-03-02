@@ -1,0 +1,46 @@
+
+<!-- extend from base layout -->
+{% extends "index.html" %}
+
+{% block content %}
+<div class="small-6 columns small-centered">
+	<h2>Hi {{ user.given_name }}, You currently have two emergency contacts. </h2>
+	{% if user.custom_data['contact_name1'] %}
+	<div class="row" data-equalizer>
+	  <div class="small-3 columns panel" data-equalizer-watch>
+	    <img class="block" src="{{ url_for('static', filename ='media/user.png')}}" alt="user photo">
+	    <h4 class="center">{{user.custom_data['contact_name1']}}</h4>
+	    <h5 class="center">{{user.custom_data['phone_number1']}}</h5>
+		
+		<form action="" method="post">	
+		    <input type="text" name="contact_name1" placeholder="Edit Contact name">
+		    <input type="text" name="phone_number1" placeholder="Edit Phone number">
+		    <input type="submit" class="btn btn-6 btn-small" value="Edit contact">
+	    </form>
+	  </div>
+	  <div class="small-3 columns panel" data-equalizer-watch>
+	    <img class="block" src="{{ url_for('static', filename ='media/user.png')}}" alt="user photo">
+	    <h4 class="center">{{user.custom_data['contact_name2']}}</h4>
+		<h5 class="center">{{user.custom_data['phone_number2']}}</h5>
+	<form action="" method="post">
+		<input type="text" name="contact_name2" placeholder="Edit Contact name">
+		<input type="text" name="phone_number2" placeholder="Edit Phone number">
+		<input type="submit" class="btn btn-6 btn-small" value="Edit contact">
+	</form>
+	  </div>
+	</div>
+
+	{% else %}
+	<h3>To make Kelele even more useful, give us a few phone numbers of close friends and family to contact when you need help.</h3>
+	<form action="" method="post">
+	    <input type="text" name="contact_name1" placeholder="First Contact">
+	    <input type="text" name="phone_number1" placeholder="Phone number">
+		
+		<br>
+	    <input type="text" name="contact_name2" placeholder="Second Contact">
+	    <input type="text" name="phone_number2" placeholder="Phone number">
+	    <input type="submit" class="btn btn-6 btn-6a" value="Add contacts">
+	</form>
+	{% endif %}
+</div>
+{% endblock %}

@@ -21,7 +21,7 @@ $base-line-height: 150% !default;
 $rem-base: 16px !default;
 
 // Use Open Sans font
-$include-open-sans: true !default;
+$include-open-sans: false !default;
 
 //
 // Global Foundation Mixins
@@ -192,7 +192,7 @@ $include-open-sans: true !default;
 // We use these to control various global styles
 $body-bg: #e26700 !default;
 $body-font-color: #fafafa !default;
-$body-font-family: Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
+$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !default;
 $body-font-weight: normal !default;
 $body-font-style: normal !default;
 

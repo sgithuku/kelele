@@ -1,8 +1,16 @@
 {% extends "index.html" %}
 
 {% block content %}
-  <div class="row small-5 columns small-centered">
+  <div class="row small-6 columns small-centered">
+    {% if user.given_name %}
+    <h2>{{user.given_name}}, notify your friends when you've been in an accident</h2>
+    <a href="{{ url_for('form') }}" class="btn btn-6 btn-6a find">Find me</a>
+    {% else %}
     <h2>Notify your friends when you've been in an accident</h2>
     <a href="{{ url_for('form') }}" class="btn btn-6 btn-6a find">Find me</a>
+    <a href="{{ url_for('register') }}" class="btn btn-6 btn-6a sign">Sign up</a>
+    {% endif %}
   </div>
+
+  
 {% endblock %}

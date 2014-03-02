@@ -17,6 +17,9 @@ jQuery(document).ready(function($) {
 
     // Insert the google maps iframe and change the location using the variables returned from the API
     // jQuery('#map').html('<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.uk/?ie=UTF8&amp;ll='+latitude+','+longitude+'&amp;spn=0.332359,0.617294&amp;t=m&amp;z=11&amp;output=embed"></iframe>');
+    var elem = document.getElementById("location");
+    elem.style.background = "none";
+    elem.style["padding-left"] = "0";
 
     //Make a call to the Google maps api to get the name of the location
     jQuery.ajax({
@@ -25,13 +28,14 @@ jQuery(document).ready(function($) {
       dataType: 'json',
       success: function(data) {
         //If Successful add the data to the 'location' div
-       var elem = document.getElementById("location");
        elem.value = data.results[0].formatted_address;
        elem.style.background = "#fafafa no-repeat scroll";
        elem.style["padding-left"] = "0.5rem";
       },
       error: function(xhr, textStatus, errorThrown) {
              errorPosition();
+             elem.style.background = "none";
+             elem.style["padding-left"] = "0";
       }
     });
     

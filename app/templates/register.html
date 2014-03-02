@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block content %}
+{% if error %}
+      <p>{{ error }}</p>
+{% endif %}
+<div class="small-6 columns small-centered">
+    <form action="" method="post">
+        <h2>Create an Account</h2>
+        <input type="text" name="given_name" placeholder="First Name">
+        <input type="text" name="surname" placeholder="Last Name">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
+        <input type="submit" class="btn btn-6 btn-6a" value="Register">
+    </form>
+</div>
+{% endblock %}

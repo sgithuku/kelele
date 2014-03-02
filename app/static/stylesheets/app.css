@@ -1,4 +1,3 @@
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 /* line 287, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-mq-small {
   font-family: "/only screen and (max-width: 40em)/";
@@ -50,7 +49,7 @@ body {
   color: #fafafa;
   padding: 0;
   margin: 0;
-  font-family: Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -2099,7 +2098,7 @@ select {
   color: #222222;
   padding: 1rem;
   display: block;
-  font-family: Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 1rem;
 }
 /* line 36, ../bower_components/foundation/scss/foundation/components/_accordion.scss */
@@ -2796,7 +2795,7 @@ select {
 /* line 197, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button, .button {
   cursor: pointer;
-  font-family: Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -4391,7 +4390,7 @@ kbd {
 /* line 87, ../bower_components/foundation/scss/foundation/components/_labels.scss */
 .label {
   font-weight: normal;
-  font-family: Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -4954,7 +4953,7 @@ ul.pagination li {
   color: #eeeeee;
   font-weight: normal;
   font-size: 1rem;
-  font-family: Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 /* line 139, ../bower_components/foundation/scss/foundation/components/_pricing-tables.scss */
 .pricing-table .price {
@@ -4964,7 +4963,7 @@ ul.pagination li {
   color: #333333;
   font-weight: normal;
   font-size: 2rem;
-  font-family: Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 /* line 140, ../bower_components/foundation/scss/foundation/components/_pricing-tables.scss */
 .pricing-table .description {
@@ -5148,7 +5147,7 @@ ul.pagination li {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: inside;
-  font-family: Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 /* line 54, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li {
@@ -5164,7 +5163,7 @@ ul.pagination li {
 .side-nav li.active > a:first-child {
   color: #4d4d4d;
   font-weight: normal;
-  font-family: Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 /* line 69, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li.divider {
@@ -5333,7 +5332,7 @@ ul.pagination li {
   display: inline;
   margin-left: 1rem;
   margin-bottom: 0.625rem;
-  font-family: Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 0.875rem;
   color: #999999;
@@ -5678,7 +5677,7 @@ table tfoot tr td {
   padding-right: 2rem;
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
-  font-family: Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 1rem;
 }
 /* line 41, ../bower_components/foundation/scss/foundation/components/_tabs.scss */
@@ -5966,7 +5965,7 @@ p aside {
 /* Default header styles */
 /* line 182, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-style: normal;
   color: #222222;
@@ -6545,7 +6544,7 @@ meta.foundation-mq-topbar {
   color: white;
   padding: 12px 0 12px 0;
   padding-left: 15px;
-  font-family: Open Sans, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 0.8125rem;
   font-weight: normal;
   background: #333333;
@@ -7713,35 +7712,65 @@ body {
 
 /* line 9, ../scss/app.scss */
 .bgwrapper {
-  background: rgba(22, 22, 22, 0.8);
+  background: rgba(22, 22, 22, 0.9);
   width: 100%;
   min-height: 100%;
   position: absolute;
 }
 
 /* line 16, ../scss/app.scss */
-h1, h2, h3 {
+h1, h2 {
   color: #fff;
   text-align: center;
 }
 
 /* line 21, ../scss/app.scss */
+h3 {
+  color: #fefefe;
+}
+
+/* line 25, ../scss/app.scss */
 h1 {
   font-weight: 100;
-  text-transform: uppercase;
+  font-size: 2rem;
+  display: inline-block;
+  padding-left: 0.25rem;
+}
+
+/* line 32, ../scss/app.scss */
+.center {
+  text-align: center;
 }
 
 /* input loading animation */
-/* line 29, ../scss/app.scss */
+/* line 38, ../scss/app.scss */
 input#location {
   background: url(../media/gif-load.gif) #fafafa no-repeat scroll;
   background-size: contain;
   padding-left: 30px;
 }
 
+/* images */
+/* line 46, ../scss/app.scss */
+img.block {
+  margin: auto auto;
+  display: block;
+}
+
+/* nav bar */
+/* line 53, ../scss/app.scss */
+.top-bar-section ul, .top-bar-section ul li, .top-bar-section ul li > a {
+  background: none !important;
+}
+
+/* line 56, ../scss/app.scss */
+.top-bar {
+  background: rgba(0, 0, 0, 0);
+}
+
 /* button */
 /* General button style (reset) */
-/* line 41, ../scss/app.scss */
+/* line 64, ../scss/app.scss */
 .btn {
   border: none;
   font-family: inherit;
@@ -7749,13 +7778,11 @@ input#location {
   color: inherit;
   background: none;
   cursor: pointer;
-  padding: 15px 80px;
   text-transform: uppercase;
   letter-spacing: 1px;
   outline: none;
   position: relative;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
   display: block;
   margin: 0 auto;
@@ -7764,70 +7791,95 @@ input#location {
   max-width: 24rem;
 }
 
-/* line 64, ../scss/app.scss */
+/* line 85, ../scss/app.scss */
 .btn:after {
   content: '';
   position: absolute;
   z-index: -1;
   -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 /* Button 6 */
-/* line 74, ../scss/app.scss */
+/* line 94, ../scss/app.scss */
 .btn-6 {
   color: #fff;
   background: #32c954;
   -webkit-transition: none;
-  -moz-transition: none;
   transition: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
 }
 
-/* line 82, ../scss/app.scss */
+/* line 105, ../scss/app.scss */
 .btn-6:active {
   top: 2px;
 }
 
 /* Button 6a */
-/* line 87, ../scss/app.scss */
+/* line 110, ../scss/app.scss */
 .btn-6a {
   border: 4px solid #32c954;
+  padding: 15px 80px;
 }
 
-/* line 91, ../scss/app.scss */
+/* line 115, ../scss/app.scss */
 .btn-6a:hover {
   background: transparent;
   color: #fff;
 }
 
-/* line 95, ../scss/app.scss */
-.header {
-  background-color: rgba(50, 201, 84, 0.9);
-  border-bottom: 3px solid #238c3a;
+/* line 120, ../scss/app.scss */
+.btn-small {
   width: 100%;
 }
 
-/* line 101, ../scss/app.scss */
+/* line 124, ../scss/app.scss */
+.btn-small:hover {
+  opacity: 0.8;
+}
+
+/* line 128, ../scss/app.scss */
+.sign {
+  margin-top: 2rem;
+  background-color: #489dff;
+  border-color: #489dff;
+}
+
+/* line 133, ../scss/app.scss */
+.header {
+  width: 100%;
+}
+
+/* line 137, ../scss/app.scss */
+.small-3 {
+  min-width: 50%;
+}
+
+/* line 141, ../scss/app.scss */
 .holder {
-  background: rgba(11, 11, 11, 0.7);
   padding: 8rem 0;
 }
 
-/* line 106, ../scss/app.scss */
+/* line 145, ../scss/app.scss */
 .footer {
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  min-width: 100%;
+  width: 100%;
 }
 
-/* line 110, ../scss/app.scss */
+/* line 153, ../scss/app.scss */
 .footer h3 {
   padding: 2em;
   color: #fafafa;
 }
 
-@media only screen {
-  /* line 116, ../scss/app.scss */
-  .small-5 {
+@media only screen and (max-width: 44em) {
+  /* line 159, ../scss/app.scss */
+  .small-6 {
     width: 100%;
   }
 }

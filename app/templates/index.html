@@ -6,13 +6,32 @@
     <title>Kelele</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/app.css')}}" />
     <script src="{{ url_for('static', filename='bower_components/modernizr/modernizr.js')}}"></script>
-
+    <script src="{{ url_for('static', filename='bower_components/jquery/jquery.js')}}"></script>
+    
   </head>
   <body>
     <div class="bgwrapper">
-      <div class="small-centered header">
-          <a href="{{ url_for('index') }}"><h1>Kelele</h1></a>
-      </div>
+      <nav class="top-bar small-6 small-centered columns">
+        <ul class="title-area">
+          <li class="name">
+            <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='media/logo.png')}}" alt="" width="40px" height="40px"></a>
+            <h1><a href="{{ url_for('index') }}">Kelele</a></h1>
+          </li>
+        </ul>
+
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
+          {% if user.given_name %}
+            <li><a href="{{ url_for('.dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('.logout') }}">Log out</a></li>
+          {% else %}
+            <li><a href="{{ url_for('.register') }}">Sign up</a></li>
+            <li><a href="{{ url_for('.login') }}">Log in</a></li>
+          {% endif %}
+          </ul>
+        </section>
+      </nav>
       <div class="holder">
         {% block content %}{% endblock %}
       </div>
