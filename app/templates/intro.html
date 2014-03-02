@@ -14,9 +14,12 @@
     {% else %}
     <h2>Notify your friends when you've been in an accident</h2>
     <a href="{{ url_for('form') }}" class="btn btn-6 btn-6a find">Find me</a>
-    <a href="{{ url_for('register') }}" class="btn btn-6 btn-6a sign">Sign up</a>
-    {% endif %}
   </div>
+    <div class="row small-6 columns show-for-small-only small-centered">
+        <a href="{{ url_for('register') }}" class="btn btn-6 btn-6a sign">Sign up</a>
+        <a href="{{ url_for('login') }}" class="btn btn-6 btn-6a sign">Log in</a>
+    </div>
+    {% endif %}
 
   
 {% endblock %}

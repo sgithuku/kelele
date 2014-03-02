@@ -12,26 +12,22 @@
     <link rel="icon" type="image/png" href="{{ url_for('static', filename="media/favicons/favicon-32x32.png")}}" sizes="32x32">
     <meta name="msapplication-TileColor" content="#111111">
     <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/app.css')}}" />
+    
     <script src="{{ url_for('static', filename='bower_components/modernizr/modernizr.js')}}"></script>
-    <script src="{{ url_for('static', filename='bower_components/jquery/jquery.js')}}"></script>
-    <script src="{{ url_for('static', filename='bower_components/fastclick/lib/fastclick.js')}}"></script>
-    <script src="{{ url_for('static', filename='bower_components/foundation/js/foundation.js')}}"></script>
-    <script src="{{ url_for('static', filename='bower_components/foundation/js/foundation/foundation.topbar.js')}}"></script>
-    <script>
-      $(document).foundation();
-    </script>
+    <script src="{{ url_for('static', filename='bower_components/jquery/dist/jquery.min.js')}}"></script>
 
 
   </head>
   <body>
+
+
     <div class="bgwrapper">
-      <nav class="top-bar small-6 small-centered columns" data-topbar>
+      <nav class="top-bar small-6 small-centered columns">
         <ul class="title-area">
           <li class="name">
             <a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='media/logo.png')}}" alt="" width="40px" height="40px"></a>
             <h1><a href="{{ url_for('index') }}">Kelele</a></h1>
           </li>
-          <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
         </ul>
 
         <section class="top-bar-section">
@@ -47,10 +43,12 @@
           </ul>
         </section>
       </nav>
+      <script>
+        $(document).foundation();
+      </script>
       <div class="holder">
         {% block content %}{% endblock %}
       </div>
-    
     {% extends "footer.html" %}
   </body>
 </html>

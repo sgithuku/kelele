@@ -163,4 +163,17 @@ img.block{
   .small-6{
     width: 100%;
   }
+  .holder{
+    padding-top: 1rem;
+    margin-bottom: 4rem;
+  }
+  .footer{
+    position: relative;
+    clear: left;
+    float: left;
+  }
+  body{
+    background: #111;
+    background-image: none;
+  }
 }

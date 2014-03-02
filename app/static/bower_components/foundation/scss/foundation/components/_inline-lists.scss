@@ -19,7 +19,7 @@ $inline-list-overflow: hidden !default;
 // We use this to control the list items
 $inline-list-display: block !default;
 
-// We use this to control any elments within list items
+// We use this to control any elements within list items
 $inline-list-children-display: block !default;
 
 //
@@ -33,13 +33,12 @@ $inline-list-children-display: block !default;
   padding: $inline-list-padding;
   list-style: none;
   overflow: $inline-list-overflow;
-  text-align: center;
 
   & > li {
     list-style: none;
-    float: none;
+    float: $default-float;
     margin-#{$default-float}: rem-calc(22);
-    display: inline-block;
+    display: $inline-list-display;
     &>* { display: $inline-list-children-display; }
   }
 }
